@@ -3,4 +3,5 @@ var day = today.getDay();
 var dayList = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
 currentDay.innerHTML = dayList[day];
 
+document.getElementById('nine').style.background = "blue";
 
