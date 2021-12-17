@@ -65,15 +65,21 @@ body {
     border-bottom-right-radius: 15px;
     background-color: #06AED5;
     color: white;
+    height: 79px;
   }
   
-  .saveBtn i:hover {
+  /* .saveBtn svg:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
-  }
+    width: 30px;
+    height: 30px;
+  } */
 
-  .col-sm-1 saveBtn {
-    position: relative;
+  .saveBtnTwo {
+    width: 25px;
+    height: 25px;
+    margin-top: -5%;
+    margin-left: 28%;
   }
 
 
