@@ -52,39 +52,87 @@ var colorCode = function () {
 
     if (hour === 9) {
         timeNine.style.background = "#ff6961";
+        timeTen.style.background = "#77dd77";
+        timeEleven.style.background = "#77dd77";
+        timeTwelve.style.background = "#77dd77";
+        timeOne.style.background = "#77dd77";
+        timeTwo.style.background = "#77dd77";
+        timeThree.style.background = "#77dd77";
+        timeFour.style.background = "#77dd77";
+        timeFive.style.background = "#77dd77";
     }
     
     if (hour === 10) {
         timeTen.style.background = "#ff6961";
+        timeEleven.style.background = "#77dd77";
+        timeTwelve.style.background = "#77dd77";
+        timeOne.style.background = "#77dd77";
+        timeTwo.style.background = "#77dd77";
+        timeThree.style.background = "#77dd77";
+        timeFour.style.background = "#77dd77";
+        timeFive.style.background = "#77dd77";
     }
     
     if (hour === 11) {
         timeEleven.style.background = "#ff6961";
+        timeTwelve.style.background = "#77dd77";
+        timeOne.style.background = "#77dd77";
+        timeTwo.style.background = "#77dd77";
+        timeThree.style.background = "#77dd77";
+        timeFour.style.background = "#77dd77";
+        timeFive.style.background = "#77dd77";
     }
     
     if (hour === 12) {
         timeTwelve.style.background = "#ff6961";
+        timeOne.style.background = "#77dd77";
+        timeTwo.style.background = "#77dd77";
+        timeThree.style.background = "#77dd77";
+        timeFour.style.background = "#77dd77";
+        timeFive.style.background = "#77dd77";
     }
     
     if (hour === 13) {
         timeOne.style.background = "#ff6961";
+        timeTwo.style.background = "#77dd77";
+        timeThree.style.background = "#77dd77";
+        timeFour.style.background = "#77dd77";
+        timeFive.style.background = "#77dd77";
     }
     
     if (hour === 14) {
         timeTwo.style.background = "#ff6961";
+        timeThree.style.background = "#77dd77";
+        timeFour.style.background = "#77dd77";
+        timeFive.style.background = "#77dd77";
     }
     
     if (hour === 15) {
         timeThree.style.background = "#ff6961";
+        timeFour.style.background = "#77dd77";
+        timeFive.style.background = "#77dd77";
     }
     
     if (hour === 16) {
         timeFour.style.background = "#ff6961";
+        timeFive.style.background = "#77dd77";
     }
     
     if (hour === 17) {
         timeFive.style.background = "#ff6961";  
     }    
+
+    if (hour === 0 || hour === 1 || hour === 2 || hour === 3 || hour === 4 || hour === 5 || hour === 6 || hour === 7 || hour === 8) {
+        timeNine.style.background = "#77dd77";
+        timeTen.style.background = "#77dd77";
+        timeEleven.style.background = "#77dd77";
+        timeTwelve.style.background = "#77dd77";
+        timeOne.style.background = "#77dd77";
+        timeTwo.style.background = "#77dd77";
+        timeThree.style.background = "#77dd77";
+        timeFour.style.background = "#77dd77";
+        timeFive.style.background = "#77dd77";
+    }
 }
 
 colorCode();
