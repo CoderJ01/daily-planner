@@ -3,8 +3,6 @@ var day = today.getDay();
 var dayList = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
 currentDay.innerHTML = dayList[day];
 
-//document.getElementById('nine').style.background = "#ff6961";
-
 var hour = today.getHours();
 var minute = today.getMinutes();
 var second = today.getSeconds();
@@ -36,4 +34,10 @@ console.log("Current Time : "+hour + meridiem + " : " + minute + " : " + second)
 if (hour) {
 
 }
+
+document.querySelector('.container').style.background = "#d3d3d3";
+
+var nineq = document.getElementById('nine');
+nineq.style.background = "blue";
+
 
