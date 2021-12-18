@@ -155,7 +155,7 @@ if(storageInput !== null) {
 }
 
 storageInput.addEventListener('input', letter => {
-    text.textContent = letter.target.value
+    text.textContent = letter.target.value;
 });
 
 var saveToLocalStorage = () => {

@@ -82,5 +82,21 @@ body {
     margin-left: 0%;
   }
 
+  .input {
+    border: 2px solid red;
+    position: absolute;
+    margin-left: 72%;
+  }
+
+  .text {
+    border: 2px solid blue;
+    position: absolute;
+    margin-top: -4%;
+    width: 72%;
+    height: 75%;
+    inline-size: 72%;
+    overflow-wrap: break-word;
+  }
+
 
   
