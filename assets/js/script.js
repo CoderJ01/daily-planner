@@ -145,24 +145,214 @@ var colorCode = function () {
 
 //colorCode();
 
-var storageInput = document.getElementById('storage');
-var text = document.getElementById('text');
-var button = document.getElementById('button');
-var storedInput = localStorage.getItem('textinput');
-
-if(storageInput !== null) {
-    text.textContent = storedInput;
+var slotNine = function () {
+    var storageInput = document.getElementById('storage');
+    var text = document.getElementById('text');
+    var button = document.getElementById('button');
+    var storedInput = localStorage.getItem('textinput');
+    
+    if(storageInput !== null) {
+        text.textContent = storedInput;
+    }
+    
+    storageInput.addEventListener('input', letter => {
+        text.textContent = letter.target.value;
+    });
+    
+    var saveToLocalStorage = () => {
+        localStorage.setItem('textinput', text.textContent);
+    }
+    
+    button.addEventListener('click', saveToLocalStorage);
 }
 
-storageInput.addEventListener('input', letter => {
-    text.textContent = letter.target.value;
-});
+slotNine();
 
-var saveToLocalStorage = () => {
-    localStorage.setItem('textinput', text.textContent);
+var slotTen = function () {
+    var storageInput = document.getElementById('storage-a');
+    var text = document.getElementById('text-a');
+    var button = document.getElementById('button-a');
+    var storedInput = localStorage.getItem('textinput');
+    
+    if(storageInput !== null) {
+        text.textContent = storedInput;
+    }
+    
+    storageInput.addEventListener('input', letter => {
+        text.textContent = letter.target.value;
+    });
+    
+    var saveToLocalStorage = () => {
+        localStorage.setItem('textinput', text-a.textContent);
+    }
+    
+    button.addEventListener('click', saveToLocalStorage);
 }
 
-button.addEventListener('click', saveToLocalStorage);
+slotTen();
+
+var slotEleven = function () {
+    var storageInput = document.getElementById('storage-b');
+    var text = document.getElementById('text-b');
+    var button = document.getElementById('button-b');
+    var storedInput = localStorage.getItem('textinput');
+    
+    if(storageInput !== null) {
+        text.textContent = storedInput;
+    }
+    
+    storageInput.addEventListener('input', letter => {
+        text.textContent = letter.target.value;
+    });
+    
+    var saveToLocalStorage = () => {
+        localStorage.setItem('textinput', text.textContent);
+    }
+    
+    button.addEventListener('click', saveToLocalStorage);
+}
+
+slotEleven();
+
+var slotTwelve = function () {
+    var storageInput = document.getElementById('storage-c');
+    var text = document.getElementById('text-c');
+    var button = document.getElementById('button-c');
+    var storedInput = localStorage.getItem('textinput');
+    
+    if(storageInput !== null) {
+        text.textContent = storedInput;
+    }
+    
+    storageInput.addEventListener('input', letter => {
+        text.textContent = letter.target.value;
+    });
+    
+    var saveToLocalStorage = () => {
+        localStorage.setItem('textinput', text.textContent);
+    }
+    
+    button.addEventListener('click', saveToLocalStorage);
+}
+
+slotTwelve();
+
+var slotOne = function () {
+    var storageInput = document.getElementById('storage-d');
+    var text = document.getElementById('text-d');
+    var button = document.getElementById('button-d');
+    var storedInput = localStorage.getItem('textinput');
+    
+    if(storageInput !== null) {
+        text.textContent = storedInput;
+    }
+    
+    storageInput.addEventListener('input', letter => {
+        text.textContent = letter.target.value;
+    });
+    
+    var saveToLocalStorage = () => {
+        localStorage.setItem('textinput', text.textContent);
+    }
+    
+    button.addEventListener('click', saveToLocalStorage);
+}
+
+slotOne();
+
+var slotTwo = function () {
+    var storageInput = document.getElementById('storage-e');
+    var text = document.getElementById('text-e');
+    var button = document.getElementById('button-e');
+    var storedInput = localStorage.getItem('textinput');
+    
+    if(storageInput !== null) {
+        text.textContent = storedInput;
+    }
+    
+    storageInput.addEventListener('input', letter => {
+        text.textContent = letter.target.value;
+    });
+    
+    var saveToLocalStorage = () => {
+        localStorage.setItem('textinput', text.textContent);
+    }
+    
+    button.addEventListener('click', saveToLocalStorage);
+}
+
+slotTwo();
+
+var slotThree = function () {
+    var storageInput = document.getElementById('storage-f');
+    var text = document.getElementById('text-f');
+    var button = document.getElementById('button-f');
+    var storedInput = localStorage.getItem('textinput');
+    
+    if(storageInput !== null) {
+        text.textContent = storedInput;
+    }
+    
+    storageInput.addEventListener('input', letter => {
+        text.textContent = letter.target.value;
+    });
+    
+    var saveToLocalStorage = () => {
+        localStorage.setItem('textinput', text.textContent);
+    }
+    
+    button.addEventListener('click', saveToLocalStorage);
+}
+
+slotThree();
+
+var slotFour = function () {
+    var storageInput = document.getElementById('storage-g');
+    var text = document.getElementById('text-g');
+    var button = document.getElementById('button-g');
+    var storedInput = localStorage.getItem('textinput');
+    
+    if(storageInput !== null) {
+        text.textContent = storedInput;
+    }
+    
+    storageInput.addEventListener('input', letter => {
+        text.textContent = letter.target.value;
+    });
+    
+    var saveToLocalStorage = () => {
+        localStorage.setItem('textinput', text.textContent);
+    }
+    
+    button.addEventListener('click', saveToLocalStorage);
+}
+
+slotFour();
+
+var slotFive = function () {
+    var storageInput = document.getElementById('storage-h');
+    var text = document.getElementById('text-h');
+    var button = document.getElementById('button-h');
+    var storedInput = localStorage.getItem('textinput');
+    
+    if(storageInput !== null) {
+        text.textContent = storedInput;
+    }
+    
+    storageInput.addEventListener('input', letter => {
+        text.textContent = letter.target.value;
+    });
+    
+    var saveToLocalStorage = () => {
+        localStorage.setItem('textinput', text.textContent);
+    }
+    
+    button.addEventListener('click', saveToLocalStorage);
+}
+
+slotFive();
+
+
 
 
 
