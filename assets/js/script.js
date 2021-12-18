@@ -31,13 +31,14 @@ if (hour === 0 && meridiem ===' AM') {
 }
 console.log("Current Time : "+hour + meridiem + " : " + minute + " : " + second);
 
-if (hour) {
-
+if (hour === 17) {
+    document.querySelector('.container').style.background = "#d3d3d3"; //past
 }
 
-document.querySelector('.container').style.background = "#d3d3d3";
 
-var nineq = document.getElementById('nine');
-nineq.style.background = "blue";
+
+
+
+
 
 
