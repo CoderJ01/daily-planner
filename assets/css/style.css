@@ -67,13 +67,15 @@ body {
     height: 79px;
     border: 1px solid black;
   }
-  
-  /* .saveBtn svg:hover {
-    font-size: 20px;
-    transition: all .3s ease-in-out;
-    width: 30px;
-    height: 30px;
-  } */
+
+  .saveBtn:hover {
+    background-color: #F77928;
+  }
+
+  .saveBtn:active {
+    background-color: #D5F04B;
+    color: black;
+  }
 
   .saveBtnTwo {
     width: 25px;
@@ -83,13 +85,11 @@ body {
   }
 
   .input {
-    border: 2px solid red;
     position: absolute;
     margin-left: 72%;
   }
 
   .text {
-    border: 2px solid blue;
     position: absolute;
     margin-top: -4%;
     width: 72%;

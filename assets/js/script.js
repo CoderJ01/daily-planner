@@ -143,7 +143,7 @@ var colorCode = function () {
     }
 }
 
-//colorCode();
+colorCode();
 
 var slotNine = function () {
     var storageInput = document.getElementById('storage');
@@ -172,7 +172,7 @@ var slotTen = function () {
     var storageInput = document.getElementById('storage-a');
     var text = document.getElementById('text-a');
     var button = document.getElementById('button-a');
-    var storedInput = localStorage.getItem('textinput');
+    var storedInput = localStorage.getItem('textinput-a');
     
     if(storageInput !== null) {
         text.textContent = storedInput;
@@ -183,7 +183,7 @@ var slotTen = function () {
     });
     
     var saveToLocalStorage = () => {
-        localStorage.setItem('textinput', text-a.textContent);
+        localStorage.setItem('textinput-a', text.textContent);
     }
     
     button.addEventListener('click', saveToLocalStorage);
@@ -195,7 +195,7 @@ var slotEleven = function () {
     var storageInput = document.getElementById('storage-b');
     var text = document.getElementById('text-b');
     var button = document.getElementById('button-b');
-    var storedInput = localStorage.getItem('textinput');
+    var storedInput = localStorage.getItem('textinput-b');
     
     if(storageInput !== null) {
         text.textContent = storedInput;
@@ -206,7 +206,7 @@ var slotEleven = function () {
     });
     
     var saveToLocalStorage = () => {
-        localStorage.setItem('textinput', text.textContent);
+        localStorage.setItem('textinput-b', text.textContent);
     }
     
     button.addEventListener('click', saveToLocalStorage);
@@ -218,7 +218,7 @@ var slotTwelve = function () {
     var storageInput = document.getElementById('storage-c');
     var text = document.getElementById('text-c');
     var button = document.getElementById('button-c');
-    var storedInput = localStorage.getItem('textinput');
+    var storedInput = localStorage.getItem('textinput-c');
     
     if(storageInput !== null) {
         text.textContent = storedInput;
@@ -229,7 +229,7 @@ var slotTwelve = function () {
     });
     
     var saveToLocalStorage = () => {
-        localStorage.setItem('textinput', text.textContent);
+        localStorage.setItem('textinput-c', text.textContent);
     }
     
     button.addEventListener('click', saveToLocalStorage);
@@ -241,7 +241,7 @@ var slotOne = function () {
     var storageInput = document.getElementById('storage-d');
     var text = document.getElementById('text-d');
     var button = document.getElementById('button-d');
-    var storedInput = localStorage.getItem('textinput');
+    var storedInput = localStorage.getItem('textinput-d');
     
     if(storageInput !== null) {
         text.textContent = storedInput;
@@ -252,7 +252,7 @@ var slotOne = function () {
     });
     
     var saveToLocalStorage = () => {
-        localStorage.setItem('textinput', text.textContent);
+        localStorage.setItem('textinput-d', text.textContent);
     }
     
     button.addEventListener('click', saveToLocalStorage);
@@ -264,7 +264,7 @@ var slotTwo = function () {
     var storageInput = document.getElementById('storage-e');
     var text = document.getElementById('text-e');
     var button = document.getElementById('button-e');
-    var storedInput = localStorage.getItem('textinput');
+    var storedInput = localStorage.getItem('textinput-e');
     
     if(storageInput !== null) {
         text.textContent = storedInput;
@@ -275,7 +275,7 @@ var slotTwo = function () {
     });
     
     var saveToLocalStorage = () => {
-        localStorage.setItem('textinput', text.textContent);
+        localStorage.setItem('textinput-e', text.textContent);
     }
     
     button.addEventListener('click', saveToLocalStorage);
@@ -287,7 +287,7 @@ var slotThree = function () {
     var storageInput = document.getElementById('storage-f');
     var text = document.getElementById('text-f');
     var button = document.getElementById('button-f');
-    var storedInput = localStorage.getItem('textinput');
+    var storedInput = localStorage.getItem('textinput-f');
     
     if(storageInput !== null) {
         text.textContent = storedInput;
@@ -298,7 +298,7 @@ var slotThree = function () {
     });
     
     var saveToLocalStorage = () => {
-        localStorage.setItem('textinput', text.textContent);
+        localStorage.setItem('textinput-f', text.textContent);
     }
     
     button.addEventListener('click', saveToLocalStorage);
@@ -310,7 +310,7 @@ var slotFour = function () {
     var storageInput = document.getElementById('storage-g');
     var text = document.getElementById('text-g');
     var button = document.getElementById('button-g');
-    var storedInput = localStorage.getItem('textinput');
+    var storedInput = localStorage.getItem('textinput-g');
     
     if(storageInput !== null) {
         text.textContent = storedInput;
@@ -321,7 +321,7 @@ var slotFour = function () {
     });
     
     var saveToLocalStorage = () => {
-        localStorage.setItem('textinput', text.textContent);
+        localStorage.setItem('textinput-g', text.textContent);
     }
     
     button.addEventListener('click', saveToLocalStorage);
@@ -333,7 +333,7 @@ var slotFive = function () {
     var storageInput = document.getElementById('storage-h');
     var text = document.getElementById('text-h');
     var button = document.getElementById('button-h');
-    var storedInput = localStorage.getItem('textinput');
+    var storedInput = localStorage.getItem('textinput-h');
     
     if(storageInput !== null) {
         text.textContent = storedInput;
@@ -344,7 +344,7 @@ var slotFive = function () {
     });
     
     var saveToLocalStorage = () => {
-        localStorage.setItem('textinput', text.textContent);
+        localStorage.setItem('textinput-h', text.textContent);
     }
     
     button.addEventListener('click', saveToLocalStorage);
