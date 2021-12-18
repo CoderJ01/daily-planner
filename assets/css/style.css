@@ -60,12 +60,12 @@ body {
   }
   
   .saveBtn {
-    border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #06AED5;
     color: white;
     height: 79px;
+    border: 1px solid black;
   }
   
   /* .saveBtn svg:hover {
@@ -78,8 +78,8 @@ body {
   .saveBtnTwo {
     width: 25px;
     height: 25px;
-    margin-top: -5%;
-    margin-left: 28%;
+    margin-top: -25%;
+    margin-left: 0%;
   }
 
 

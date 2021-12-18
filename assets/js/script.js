@@ -1,5 +1,3 @@
-document.querySelector('.container').style.background = "#d3d3d3"; //past
-
 var retrieveTime = function () {
     var today = new Date();
     var day = today.getDay();
@@ -49,6 +47,16 @@ var colorCode = function () {
     var timeThree = document.getElementById('three');
     var timeFour = document.getElementById('four');
     var timeFive = document.getElementById('five');
+
+    timeNine.style.background = "#d3d3d3";
+    timeTen.style.background = "#d3d3d3";
+    timeEleven.style.background = "#d3d3d3";
+    timeTwelve.style.background = "#d3d3d3";
+    timeOne.style.background = "#d3d3d3";
+    timeTwo.style.background = "#d3d3d3";
+    timeThree.style.background = "#d3d3d3";
+    timeFour.style.background = "#d3d3d3";
+    timeFive.style.background = "#d3d3d3";
 
     if (hour === 9) {
         timeNine.style.background = "#ff6961";
@@ -135,9 +143,26 @@ var colorCode = function () {
     }
 }
 
-colorCode();
+//colorCode();
 
+var storageInput = document.getElementById('storage');
+var text = document.getElementById('text');
+var button = document.getElementById('button');
+var storedInput = localStorage.getItem('textinput');
 
+if(storageInput !== null) {
+    text.textContent = storedInput;
+}
+
+storageInput.addEventListener('input', letter => {
+    text.textContent = letter.target.value
+});
+
+var saveToLocalStorage = () => {
+    localStorage.setItem('textinput', text.textContent);
+}
+
+button.addEventListener('click', saveToLocalStorage);
 
 
 
