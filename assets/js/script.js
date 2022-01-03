@@ -30,7 +30,7 @@ var retrieveTime = function () {
             meridiem =' Midnight';
         }
     }
-    console.log("Current Time : "+hour + meridiem + " : " + minute + " : " + second);
+    console.log("Current Time : "+ hour + meridiem + " : " + minute + " : " + second);
 
     return hour;
 }
@@ -38,108 +38,39 @@ var retrieveTime = function () {
 var hour = retrieveTime();
 
 var colorCode = function () {
-    var timeNine = document.getElementById('nine');
-    var timeTen = document.getElementById('ten');
-    var timeEleven = document.getElementById('eleven');
-    var timeTwelve = document.getElementById('twelve');
-    var timeOne = document.getElementById('one');
-    var timeTwo = document.getElementById('two');
-    var timeThree = document.getElementById('three');
-    var timeFour = document.getElementById('four');
-    var timeFive = document.getElementById('five');
 
-    timeNine.style.background = "#d3d3d3";
-    timeTen.style.background = "#d3d3d3";
-    timeEleven.style.background = "#d3d3d3";
-    timeTwelve.style.background = "#d3d3d3";
-    timeOne.style.background = "#d3d3d3";
-    timeTwo.style.background = "#d3d3d3";
-    timeThree.style.background = "#d3d3d3";
-    timeFour.style.background = "#d3d3d3";
-    timeFive.style.background = "#d3d3d3";
+    var time = [];
+    time[0] = document.getElementById('nine');
+    time[1] = document.getElementById('ten');
+    time[2] = document.getElementById('eleven');
+    time[3] = document.getElementById('twelve');
+    time[4] = document.getElementById('one');
+    time[5] = document.getElementById('two');
+    time[6] = document.getElementById('three');
+    time[7] = document.getElementById('four');
+    time[8] = document.getElementById('five');
 
-    if (hour === 9) {
-        timeNine.style.background = "#ff6961";
-        timeTen.style.background = "#77dd77";
-        timeEleven.style.background = "#77dd77";
-        timeTwelve.style.background = "#77dd77";
-        timeOne.style.background = "#77dd77";
-        timeTwo.style.background = "#77dd77";
-        timeThree.style.background = "#77dd77";
-        timeFour.style.background = "#77dd77";
-        timeFive.style.background = "#77dd77";
+    for (var i = 0; i < 9; i++) {
+        time[i].style.background = "#d3d3d3"
     }
-    
-    if (hour === 10) {
-        timeTen.style.background = "#ff6961";
-        timeEleven.style.background = "#77dd77";
-        timeTwelve.style.background = "#77dd77";
-        timeOne.style.background = "#77dd77";
-        timeTwo.style.background = "#77dd77";
-        timeThree.style.background = "#77dd77";
-        timeFour.style.background = "#77dd77";
-        timeFive.style.background = "#77dd77";
+
+    for (var i = 0; i < 9; i++) {
+        time[i].style.bakcground = "#d3d3d3";
+
+        if (hour === (i + 9)) {
+            time[i].style.background = "#ff6961";
+
+            for (var i = (i + 1); i < 9; i++) {
+                time[i].style.background = "#77dd77";
+            }
+        }
+
     }
-    
-    if (hour === 11) {
-        timeEleven.style.background = "#ff6961";
-        timeTwelve.style.background = "#77dd77";
-        timeOne.style.background = "#77dd77";
-        timeTwo.style.background = "#77dd77";
-        timeThree.style.background = "#77dd77";
-        timeFour.style.background = "#77dd77";
-        timeFive.style.background = "#77dd77";
-    }
-    
-    if (hour === 12) {
-        timeTwelve.style.background = "#ff6961";
-        timeOne.style.background = "#77dd77";
-        timeTwo.style.background = "#77dd77";
-        timeThree.style.background = "#77dd77";
-        timeFour.style.background = "#77dd77";
-        timeFive.style.background = "#77dd77";
-    }
-    
-    if (hour === 13) {
-        timeOne.style.background = "#ff6961";
-        timeTwo.style.background = "#77dd77";
-        timeThree.style.background = "#77dd77";
-        timeFour.style.background = "#77dd77";
-        timeFive.style.background = "#77dd77";
-    }
-    
-    if (hour === 14) {
-        timeTwo.style.background = "#ff6961";
-        timeThree.style.background = "#77dd77";
-        timeFour.style.background = "#77dd77";
-        timeFive.style.background = "#77dd77";
-    }
-    
-    if (hour === 15) {
-        timeThree.style.background = "#ff6961";
-        timeFour.style.background = "#77dd77";
-        timeFive.style.background = "#77dd77";
-    }
-    
-    if (hour === 16) {
-        timeFour.style.background = "#ff6961";
-        timeFive.style.background = "#77dd77";
-    }
-    
-    if (hour === 17) {
-        timeFive.style.background = "#ff6961";  
-    }    
 
     if (hour === 0 || hour === 1 || hour === 2 || hour === 3 || hour === 4 || hour === 5 || hour === 6 || hour === 7 || hour === 8) {
-        timeNine.style.background = "#77dd77";
-        timeTen.style.background = "#77dd77";
-        timeEleven.style.background = "#77dd77";
-        timeTwelve.style.background = "#77dd77";
-        timeOne.style.background = "#77dd77";
-        timeTwo.style.background = "#77dd77";
-        timeThree.style.background = "#77dd77";
-        timeFour.style.background = "#77dd77";
-        timeFive.style.background = "#77dd77";
+        for (var i = 0; i < 9; i++) {
+            time[i].style.background = "#77dd77";
+        }
     }
 }
 
@@ -307,10 +238,10 @@ var slotThree = function () {
 slotThree();
 
 var slotFour = function () {
-    var storageInput = document.getElementById('storage-g');
+    var storageInput = document.getElementById('input');
     var text = document.getElementById('text-g');
-    var button = document.getElementById('button-g');
-    var storedInput = localStorage.getItem('textinput-g');
+    var button = document.getElementById('search');
+    var storedInput = localStorage.getItem('textinput-ga');
     
     if(storageInput !== null) {
         text.textContent = storedInput;

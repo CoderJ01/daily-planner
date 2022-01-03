@@ -12,7 +12,6 @@ The objective of this website is to display a planner that can be used by an emp
 ## Screenshot of Website
 ![Alt text](./assets/images/image-screenshot.jpg?raw=true "Daily Planner")
 
-
 ## Website Link
 https://coderj01.github.io/daily-planner/
 
