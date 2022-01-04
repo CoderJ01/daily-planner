@@ -240,9 +240,9 @@ var slotThree = function () {
 slotThree();
 
 var slotFour = function () {
-    var storageInput = document.getElementById('input');
+    var storageInput = document.getElementById('storage-g');
     var text = document.getElementById('text-g');
-    var button = document.getElementById('search');
+    var button = document.getElementById('button-g');
     var storedInput = localStorage.getItem('textinput-g');
     
     if(storageInput !== null) {
