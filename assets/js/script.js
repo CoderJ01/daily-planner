@@ -1,3 +1,4 @@
+// retrieve current time
 var retrieveTime = function () {
     var today = new Date();
     var day = today.getDay();
@@ -30,13 +31,13 @@ var retrieveTime = function () {
             meridiem =' Midnight';
         }
     }
-    console.log("Current Time : "+ hour + meridiem + " : " + minute + " : " + second);
 
     return hour;
 }
 
 var hour = retrieveTime();
 
+//set up color scheme for planner
 var colorCode = function () {
 
     var time = [];
@@ -50,18 +51,18 @@ var colorCode = function () {
     time[7] = document.getElementById('four');
     time[8] = document.getElementById('five');
 
-    for (var i = 0; i < 9; i++) {
-        time[i].style.background = "#d3d3d3"
+    for (var i = 0; i < time.length; i++) {
+        time[i].style.background = "#d3d3d3" // default color
     }
 
-    for (var i = 0; i < 9; i++) {
+    for (var i = 0; i < time.length; i++) {
         time[i].style.bakcground = "#d3d3d3";
 
         if (hour === (i + 9)) {
-            time[i].style.background = "#ff6961";
+            time[i].style.background = "#ff6961"; // current time
 
-            for (var i = (i + 1); i < 9; i++) {
-                time[i].style.background = "#77dd77";
+            for (var i = (i + 1); i < time.length; i++) {
+                time[i].style.background = "#77dd77"; // future times
             }
         }
 
@@ -75,6 +76,7 @@ var colorCode = function () {
 }
 
 colorCode();
+
 
 var slotNine = function () {
     var storageInput = document.getElementById('storage');
@@ -241,7 +243,7 @@ var slotFour = function () {
     var storageInput = document.getElementById('input');
     var text = document.getElementById('text-g');
     var button = document.getElementById('search');
-    var storedInput = localStorage.getItem('textinput-ga');
+    var storedInput = localStorage.getItem('textinput-g');
     
     if(storageInput !== null) {
         text.textContent = storedInput;
