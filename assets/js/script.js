@@ -77,6 +77,7 @@ var colorCode = function () {
 
 colorCode();
 
+// set functions for each time slot
 
 var slotNine = function () {
     var storageInput = document.getElementById('storage');
